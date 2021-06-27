@@ -1,0 +1,34 @@
+body {
+  background-color: #1b1717;
+}
+
+#ball {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 50%;
+  background: #333333;
+  background: -webkit-linear-gradient(to bottom, #dd1818, #222);
+  background: linear-gradient(to bottom, #dd1818, #222);
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 249px;
+    width: 120px;
+    height: 80px;
+    opacity: 0.5;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
